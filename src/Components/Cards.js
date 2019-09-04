@@ -66,12 +66,10 @@ export default class Cards extends Component {
             <div style={styles.root}>
                 <h2 style={styles.main}>Dog Matcher</h2>
                 <Card style={styles.card} >
-                    <CardActionArea >
-                        <CardMedia
-                            style={styles.image}
-                            image={this.state.current}
-                        />
-                    </CardActionArea>
+                    <CardMedia
+                        style={styles.image}
+                        image={this.state.current}
+                    />
                     <CardActions style={{ alignItems: "center" }}>
                         <Fab
                             style={styles.btn}

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 var moment = require('moment');
 
@@ -14,9 +13,6 @@ const styles = {
 }
 export default class Doglist extends Component {
     getDisplayDate = date => {
-        // current = new Date()
-        // diff = Math.floor((current - date) / 1000)
-        // if(diff<3600)
         var diff = moment(date).fromNow()
         return diff
     }
